@@ -1,0 +1,45 @@
+{
+  "name": "lit-ssr",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --experimental-vm-modules ./demo/server.js",
+    "test": "node --experimental-vm-modules ./test/render_test.js | tap-spec",
+    "format": "prettier src/**/*.ts --write"
+  },
+  "author": "",
+  "license": "BSD-3-Clause",
+  "repository": "PolymerLabs/lit-ssr",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/node": "^13.7.4",
+    "@types/parse5": "^5.0.0",
+    "@types/resolve": "^1.14.0",
+    "chai": "^4.2.0",
+    "prettier": "^1.19.1",
+    "tap-spec": "^5.0.0",
+    "tape-promise": "^4.0.0",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@types/koa": "^2.0.49",
+    "@types/koa-static": "^4.0.1",
+    "@types/tape": "^4.2.33",
+    "@webcomponents/shadycss": "^1.9.1",
+    "koa": "^2.7.0",
+    "koa-node-resolve": "^1.0.0-pre.5",
+    "koa-static": "^5.0.0",
+    "lit-element": "^2.3.0",
+    "lit-html": "github:Polymer/lit-html#hydration",
+    "parse5": "^5.1.0",
+    "parse5-traverse": "^1.0.3",
+    "resolve": "^1.10.1",
+    "tape": "^4.11.0"
+  },
+  "engines": {
+    "node": ">=13.9.0"
+  }
+}
